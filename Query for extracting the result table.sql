@@ -63,8 +63,8 @@ H as
 	   [% increase in Total Revenue]
 from DEF T1
 cross apply(select
-				(max([Net Income]) - min([Net Income]))/abs(min([Net Income])) as '% increase in Net Income',
-				(max([Total Revenue]) - min([Total Revenue]))/abs(min([Total Revenue])) as '% increase in Total Revenue'
+				Round(((max([Net Income]) - min([Net Income]))/abs(min([Net Income]))*100), 2) as '% increase in Net Income',
+				Round(((max([Total Revenue]) - min([Total Revenue]))/abs(min([Total Revenue]))*100), 2) as '% increase in Total Revenue'
 			from DEF T2
 			where T1.[Company ID] = T2.[Company ID]and [Company ID] in (select [Company ID] from CompanyInGdPerformance)
 			group by [Company ID]) x)
