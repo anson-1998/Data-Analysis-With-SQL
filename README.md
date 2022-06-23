@@ -1,4 +1,4 @@
-# Sample-DA-project-with-SQL
+# DA Project On Sample Company Data With SQL 
 
 ## Task
 A sample DA project to identify companies with constant increase of revenue and net income under particular year range.
