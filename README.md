@@ -1,7 +1,7 @@
 # Data Analysis On Sample Company Data With SQL 
 
 ## Task
-To identify companies with constant increase of revenue and net income under particular year range.
+To identify companies with a constant increase in revenue and net income under a particular range of years.
 
 ## Dictionary for input data
 Sheet name: "Finanical Report Data"
